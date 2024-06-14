@@ -38,3 +38,6 @@ jobs:
 
       - name: tests with gradle
         run: ./gradlew clean test
+
+      - name: run the application
+        run: ./gradlew clean bootRun --args="data/example2.txt"
