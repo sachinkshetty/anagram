@@ -7,13 +7,13 @@ env:
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [Main]
     paths:
       - 'src/**'
       - 'build.gradle'
 
   pull_request:
-    branches: [main]
+    branches: [Main]
     paths:
       - 'src/**'
       - 'build.gradle'
