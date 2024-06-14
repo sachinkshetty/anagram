@@ -1,5 +1,6 @@
 # Anagram Finder
-A simple command line utility for finding anagrams in a specified file
+A simple command line utility for finding anagrams in a specified file.
+Please see the url https://github.com/sachinkshetty/anagram/actions to check the build, test and application run.
 
 ## Software required to run this
 * Java 17
