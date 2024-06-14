@@ -1,19 +1,19 @@
 name: Build and Deploy
 
 env:
-  JAVA_VERSION: '11'
+  JAVA_VERSION: '17'
   PACKAGE_LOCATION: ./app.zip
 
 on:
   workflow_dispatch:
   push:
-    branches: [Main]
+    branches: [main]
     paths:
       - 'src/**'
       - 'build.gradle'
 
   pull_request:
-    branches: [Main]
+    branches: [main]
     paths:
       - 'src/**'
       - 'build.gradle'
@@ -27,7 +27,7 @@ jobs:
       - name: Checkout Source Code
         uses: actions/checkout@v3
 
-      - name: Set up JDK 11
+      - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
